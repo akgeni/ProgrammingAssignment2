@@ -1,8 +1,11 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
 
+
+## returns the list containg functions to set and get data.
+## once setInv is called it returned already calulated value.
+## otherwise return NULL.
 makeCacheMatrix <- function(x = matrix()) {
   invMat <- NULL
   set <- function(y) {
@@ -19,7 +22,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## It takes input as output of makeCacheMatrix function
+## return cached inverse of matrix if already calculated
+## otherwise solve itself.
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
